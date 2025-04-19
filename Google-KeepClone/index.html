@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyNotes App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MyNotes</h1>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search notes...">
+            <button id="searchBtn">Search</button>
+        </div>
+    </header>
+    <br>
+    <div class="container">
+        <div class="navBar">
+            <div class="navBar-right">
+              <button id="showArchived" class="archive">Archived</button>
+              <button id="showDeleted" class="delete">Deleted</button>
+              <button id="showActive" class="archive">Active</button>
+            </div>
+          </div>
+        </div>
+        <div class="input-box">
+            <input type="text" id="addTitle" placeholder="Title">
+            <textarea id="addText" placeholder="Write your note here..." cols="30" rows="10"></textarea>
+            <button id="addNote">Add Note</button>
+        </div>
+        <div id="notes">
+            <!-- Notes will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
